@@ -1,0 +1,34 @@
+print("WAP to identify the colour coding and the print the exact resistence using python ")
+import math
+a=str(input("band 1 colour="))
+b=str(input("band 2 colour="))
+c=str(input("band 3 colour="))     
+
+def check(a):
+    if a=="black":
+        return 0
+    if a=="brown":
+        return 1
+    if a=="red":
+        return 2
+    if a=="orange":
+        return 3
+    if a=="yellow":
+        return 4
+    if a=="green":
+        return 5
+    if a=="blue":
+        return 6
+    if a=="violet":
+        return 7
+    if a=="grey":
+        return 8
+    if a=="white":
+        return 9
+s=check(a)
+v=check(b)
+z=check(c)
+print("the value of the given resistor is ",s*10+v,"*10^{}".format(z))
+print((s*10+v)*pow(10,z))
+    
+
